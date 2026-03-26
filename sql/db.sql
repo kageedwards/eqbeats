@@ -10,7 +10,7 @@ CREATE TABLE users (
     license text not null default 'Copyright'
 );
 CREATE INDEX user_name_idx ON users(name);
-CREATE INDEX user_email_idx ON users(name);
+CREATE INDEX user_email_idx ON users(email);
 
 CREATE TABLE tracks (
     id serial primary key,
